@@ -1,0 +1,7 @@
+@function bg($name) {
+    @return map-get($bg, $name);
+}
+
+@function c($name) {
+    @return map-get($c, $name);
+}

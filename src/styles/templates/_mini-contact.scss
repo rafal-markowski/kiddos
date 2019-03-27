@@ -1,0 +1,24 @@
+
+.mini-contact {
+    font-size: 0.9375em;
+    background: bg('light-blue');
+    color: c('white-2');
+
+    &__icon {
+        color: c('white');
+        padding: 0.5rem;
+        border-radius: 100%;
+
+        &--map {
+            background: bg('dark-blue');
+        }
+        
+        &--paper-plane {
+            background: bg('orange');
+        }
+
+        &--phone {
+            background: bg('green');
+        }
+    }
+} 
