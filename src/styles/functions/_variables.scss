@@ -5,3 +5,7 @@
 @function c($name) {
     @return map-get($c, $name);
 }
+
+@function bs($name) {
+    @return map-get($bs, $name);
+}

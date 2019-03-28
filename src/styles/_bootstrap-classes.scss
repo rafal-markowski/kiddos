@@ -1,3 +1,7 @@
 .container {
     max-width: 1230px;
 }
+
+.nav-link, .navbar-brand {
+    font-family: $f-primary;
+}

@@ -2,10 +2,22 @@ $bg: (
     'light-blue': #1eaaf1,
     'dark-blue': #5d50c6,
     'orange': #fda683,
-    'green': #8cc152
-);
+    'green': #8cc152,
+    'black': #000000,
+    'white': #ffffff
+) !default;
 
 $c: (
     'white': #ffffff,
-    'white-2': rgba(255, 255, 255, 0.7)
-);
+    'white-2': rgba(255, 255, 255, 0.7),
+    'white-3': rgba(255, 255, 255, 0.5),
+    'light-blue': #1eaaf1,
+    'black': #000000
+) !default;
+    
+$bs: (
+    header: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+) !default;
+
+$f-primary: 'Work Sans', Arial, sans-serif !default;
+$f-secondary: 'Fredericka the Great', cursive !default;
