@@ -27,10 +27,14 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
+                test: /\.(png|jpg|gif)$/,
                 use: [
-                    { loader: 'file-loader', options: { name: 'images/[name].[ext]' } },
-                    'img-loader'
+                    {
+                        loader: 'file-loader',
+                        options: {
+                        name: '[path][name].[ext]',
+                        },
+                    },
                 ]
             },
             {
