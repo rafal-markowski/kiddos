@@ -1,15 +1,15 @@
-@function bg($name) {
-    @return map-get($bg, $name);
+@function bg($key) {
+    @return check($bg, $key, 'Invalid key: #{$key}');
 }
 
-@function c($name) {
-    @return map-get($c, $name);
+@function c($key) {
+    @return check($c, $key, 'Invalid key: #{$key}');
 }
 
-@function bs($name) {
-    @return map-get($bs, $name);
+@function bs($key) {
+    @return check($bs, $key, 'Invalid key: #{$key}');
 }
 
-@function b($name) {
-    @return map-get($b, $name);
+@function b($key) {
+    @return check($b, $key, 'Invalid key: #{$key}');
 }

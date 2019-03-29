@@ -31,12 +31,7 @@ $(() => {
 
     $toggleBtn.on('click',  function() {
         $toggleIcon.toggleClass(btnOff).toggleClass(btnOn);
-
-        if(!$navbar.hasClass(dropdownMenu)) {
-            $navbar.stop(true, false).slideDown('slow').addClass(dropdownMenu);
-        } else {
-            $navbar.stop(true, false).slideUp('slow').removeClass(dropdownMenu);
-        }
+        $navbar.stop(true, false).slideToggle('slow').toggleClass(dropdownMenu);
     });
 
     $closeBtn.on('click', function() {

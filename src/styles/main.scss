@@ -1,8 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 
 @import 'variables';
+@import 'functions/check';
 @import 'functions/variables';
 @import 'mixins/position';
+@import 'mixins/h1';
 
 @import 'global';
 @import 'bootstrap-classes';
