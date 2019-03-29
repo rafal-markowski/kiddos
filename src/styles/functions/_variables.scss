@@ -9,3 +9,7 @@
 @function bs($name) {
     @return map-get($bs, $name);
 }
+
+@function b($name) {
+    @return map-get($b, $name);
+}

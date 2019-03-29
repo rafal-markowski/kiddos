@@ -4,6 +4,7 @@ $bg: (
     'orange': #fda683,
     'green': #8cc152,
     'black': #000000,
+    'black-2': rgba(0, 0, 0, 0.2),
     'white': #ffffff
 ) !default;
 
@@ -17,6 +18,10 @@ $c: (
     
 $bs: (
     header: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+) !default;
+
+$b: (
+    my-carousel: 2px dashed #fda683
 ) !default;
 
 $f-primary: 'Work Sans', Arial, sans-serif !default;

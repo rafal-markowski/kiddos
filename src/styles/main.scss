@@ -2,7 +2,10 @@
 
 @import 'variables';
 @import 'functions/variables';
+@import 'mixins/position';
 
+@import 'global';
 @import 'bootstrap-classes';
 @import 'templates/mini-contact';
 @import 'templates/page-header';
+@import 'templates/carousel';
