@@ -75,13 +75,13 @@
     <!-- start carousel -->
 
     <main>
-        <div id="carousel" class="my-carousel carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
+        <section id="carousel" class="my-carousel carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators pb-5 mb-5">
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
             </ol>
             <div class="carousel-inner">
-                <article class="my-carousel__slide my-carousel__slide--1 carousel-item active">
+                <div class="my-carousel__slide my-carousel__slide--1 carousel-item active">
                     <div class="my-carousel__caption">
                         <h1 class="my-carousel__text mb-5">
                             Kids Are The Best<br>
@@ -89,8 +89,8 @@
                         </h1>
                         <a href="#" class="my-carousel__btn-link">Read more</a>
                     </div>
-                </article>
-                <article class="my-carousel__slide my-carousel__slide--2 carousel-item">
+                </div>
+                <div class="my-carousel__slide my-carousel__slide--2 carousel-item">
                     <div class="my-carousel__caption">
                         <h1 class="my-carousel__text mb-5">
                             Perfect Lerned<br>
@@ -98,7 +98,7 @@
                         </h1>
                         <a href="#" class="my-carousel__btn-link">Read more</a>
                     </div>
-                </article>
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -108,16 +108,53 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </section>
     
         <!-- end carousel --> 
         
         <!-- end services --> 
         
-        <div class="services">
-    
-        </div>
-    
+        <section class="container-fluid">
+            <div class="row">
+                <div class="service service--teacher col-md-6 col-lg-3 py-5">
+                    <div class="service__circle">
+                        <i class="service__icon"></i>
+                    </div>
+                    <div class="pt-5 pb-4 px-2 pb-lg-0">
+                        <h2 class="service__title">Certified Teachers</h2>
+                        <p>Duis eu nulla fringilla felis consequat molestie. Praesent bibendum ligula eget nibh commodo semper.</p>
+                    </div>
+                </div>
+                <div class="service service--reading col-md-6 col-lg-3 py-5">
+                    <div class="service__circle">
+                        <i class="service__icon"></i>
+                    </div>
+                    <div class="pt-5 pb-4 px-2 pb-lg-0">
+                        <h2 class="service__title">Special Education</h2>
+                        <p>Donec egestas vitae turpis eu ligula dignissim. Aenean at consequat augue, sed egestas neque.</p>
+                    </div>
+                </div>
+                <div class="service service--book col-md-6 col-lg-3 py-5">
+                    <div class="service__circle">
+                        <i class="service__icon"></i>
+                    </div>
+                    <div class="pt-5 pb-4 px-2 pb-lg-0">
+                        <h2 class="service__title">Book & Library</h2>
+                        <p>Sed nisl purus, tristique a molestie a, scelerisque elementum sed magna. Aliquam in viseti molestie tortor.</p>
+                    </div>
+                </div>
+                <div class="service service--certificate col-md-6 col-lg-3 py-5">
+                    <div class="service__circle">
+                        <i class="service__icon"></i>
+                    </div>
+                    <div class="pt-5 pb-4 px-2 pb-lg-0">
+                        <h2 class="service__title">Certification</h2>
+                        <p>Ut lectus odio, elementum posuere viverra eu, tincidunt eu turpis. Praesent in mauris ut gravida dictum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- end services -->
     </main>
 </body>

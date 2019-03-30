@@ -1,0 +1,64 @@
+.service {
+    position: relative;
+    text-align: center;
+    color: c('white-2');
+    
+    &--teacher {
+        background: bg('light-blue');
+
+        .service__icon {
+            background: url('../src/images/icons/teacher.svg') no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &--reading {
+        background: bg('green');
+    
+        .service__icon {
+            background: url('../src/images/icons/reading.svg') no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &--book {
+        background: bg('purple');
+        
+        .service__icon {
+            background: url('../src/images/icons/book.svg') no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &--certificate {
+        background: bg('red');
+
+        .service__icon {
+            background: url('../src/images/icons/certificate.svg') no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 50px;
+        height: 50px;
+        color: bg('white');
+    }
+
+    &__circle {
+        @include position($p: absolute, $t: -60px, $l: calc(50% - 60px), $z: 3);
+        @include center();
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        background: bg('white');
+    }
+
+    &__title {
+        font-size: 1.375em;
+        color: c('white');
+    }
+
+
+}
