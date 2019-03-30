@@ -50,17 +50,34 @@
     }
 
     &__btn-link {
+        position: relative;
         padding: 1rem 2.25rem;
         border-radius: 30px;
-        background: bg('pink');
-        color: c('white');
+        color: c('white');        
         
-        &:hover {
+        &::before, &::after {
+            @include position(absolute, 0, 0, 0, 0, -1);
+            border-radius: inherit;
+            content: '';
+        }
+
+        &::before {
             border: b(my-carousel);
-            background: transparent;
+        }
+
+        &::after {
+            will-change: opacity;
+            transition: opacity 0.45s ease-in-out;
+            background: bg('pink');
+        }
+
+        &:hover {
             color: c('white');
             text-decoration: none;
-            transition: all 0.45s ease-in-out;
+
+            &::after {
+                opacity: 0;
+            }
         }
     }
 }
