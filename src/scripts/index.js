@@ -10,3 +10,5 @@ import '../images/icons/teacher.svg';
 import '../images/icons/reading.svg';
 import '../images/icons/book.svg';
 import '../images/icons/certificate.svg';
+import '../images/blog/img_1.jpg';
+import '../images/blog/img_2.jpg';

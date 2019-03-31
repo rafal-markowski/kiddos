@@ -5,11 +5,12 @@
 @import 'functions/variables';
 @import 'mixins/position';
 @import 'mixins/center';
-@import 'mixins/h1';
 
 @import 'global';
 @import 'bootstrap-classes';
+@import 'templates/section';
 @import 'templates/mini-contact';
 @import 'templates/page-header';
 @import 'templates/carousel';
 @import 'templates/service';
+@import 'templates/footer';
