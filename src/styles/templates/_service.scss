@@ -1,5 +1,6 @@
 .service {
     position: relative;
+    z-index: 5;
     text-align: center;
     color: c('white-2');
     
@@ -47,7 +48,7 @@
     }
 
     &__circle {
-        @include position($p: absolute, $t: -60px, $l: calc(50% - 60px), $z: 3);
+        @include position($p: absolute, $t: -60px, $l: calc(50% - 60px));
         @include center();
         width: 120px;
         height: 120px;
