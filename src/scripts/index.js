@@ -5,6 +5,7 @@ import '../styles/main.scss';
 import 'aos/dist/aos.css'
 
 import './header';
+import './loading-page';
 
 import '../images/carousel/slide_1.jpg';
 import '../images/carousel/slide_2.jpg';
