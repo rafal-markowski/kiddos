@@ -4,39 +4,14 @@
     text-align: center;
     color: c('white-2');
     
-    &--teacher {
-        background: bg('light-blue');
+    @each $name, $color in ('teacher': 'light-blue', 'reading': 'green', 'book': 'purple', 'certificate': 'red') {
+        &--#{$name} {
+            background: bg($color);
 
-        .service__icon {
-            background: url('../src/images/icons/teacher.svg') no-repeat center;
-            background-size: cover;
-        }
-    }
-
-    &--reading {
-        background: bg('green');
-    
-        .service__icon {
-            background: url('../src/images/icons/reading.svg') no-repeat center;
-            background-size: cover;
-        }
-    }
-
-    &--book {
-        background: bg('purple');
-        
-        .service__icon {
-            background: url('../src/images/icons/book.svg') no-repeat center;
-            background-size: cover;
-        }
-    }
-
-    &--certificate {
-        background: bg('red');
-
-        .service__icon {
-            background: url('../src/images/icons/certificate.svg') no-repeat center;
-            background-size: cover;
+            .service__icon {
+                background: url('../src/images/icons/#{$name}.svg') no-repeat center;
+                background-size: cover;
+            }
         }
     }
 
