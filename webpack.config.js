@@ -63,7 +63,31 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './src/pages/index.html',
-        })
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'about.html',
+            template: './src/pages/about.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'teacher.html',
+            template: './src/pages/teacher.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'courses.html',
+            template: './src/pages/courses.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'pricing.html',
+            template: './src/pages/pricing.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'blog.html',
+            template: './src/pages/blog.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            template: './src/pages/contact.html',
+        }),
     ],
     devServer: {
         host: '0.0.0.0',
