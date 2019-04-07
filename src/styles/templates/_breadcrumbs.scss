@@ -1,0 +1,25 @@
+.breadcrumbs {
+    position: relative;
+    min-height: 300px;
+    background: url('../src/images/carousel/slide_2.jpg') no-repeat center;
+    background-size: cover;
+
+    &::after {
+        @include position(absolute, 0, 0, 0, 0, 1);
+        background: bg('red-2');
+        content: '';
+    }
+
+    &__item {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__block {
+        @include position($p: relative, $z: 2);
+    }
+
+    &__block, &__link, &__link:hover {
+        color: c('white');
+    }
+}
