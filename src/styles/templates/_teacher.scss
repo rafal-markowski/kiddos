@@ -1,0 +1,25 @@
+.teacher {
+    text-align: center;
+    color: c('black-2');
+    
+    &__img {
+        width: 100%;
+        height: 300px;
+
+        @for $i from 1 through 8 {
+            &--#{$i} {
+                background: url('../src/images/teacher/img_#{$i}.jpg');
+                background-size: cover;
+            }
+        }
+    }
+
+    &__h2 {
+        color: c('black');
+    }
+
+    &__h3 {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+}
