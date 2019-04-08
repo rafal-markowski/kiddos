@@ -1,0 +1,20 @@
+.course {
+    padding: 1rem 2rem;
+    
+    &__img {
+        @include media-breakpoint-down(md) {
+            height: 300px;
+        }
+
+        @for $i from 1 through 6 {
+            &--#{$i} {
+                background: url('../src/images/courses/img_#{$i}.jpg') no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+
+    &__body {
+        background: bg('gray');
+    }
+}

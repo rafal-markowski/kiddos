@@ -23,7 +23,12 @@ import '../images/teacher/img_5.jpg';
 import '../images/teacher/img_6.jpg';
 import '../images/teacher/img_7.jpg';
 import '../images/teacher/img_8.jpg';
-
+import '../images/courses/img_1.jpg';
+import '../images/courses/img_2.jpg';
+import '../images/courses/img_3.jpg';
+import '../images/courses/img_4.jpg';
+import '../images/courses/img_5.jpg';
+import '../images/courses/img_6.jpg';
 
 AOS.init({
     disable: 'mobile',
