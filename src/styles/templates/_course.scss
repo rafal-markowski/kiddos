@@ -6,12 +6,14 @@
             height: 300px;
         }
 
-        @for $i from 1 through 6 {
-            &--#{$i} {
-                background: url('../src/images/courses/img_#{$i}.jpg') no-repeat center;
-                background-size: cover;
-            }
-        }
+        @include bg-img((
+            1: '../src/images/courses/img_1.jpg',
+            2: '../src/images/courses/img_2.jpg',
+            3: '../src/images/courses/img_3.jpg',
+            4: '../src/images/courses/img_4.jpg',
+            5: '../src/images/courses/img_5.jpg',
+            6: '../src/images/courses/img_6.jpg'
+        ));
     }
 
     &__body {

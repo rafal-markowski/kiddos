@@ -9,8 +9,7 @@
             background: bg($color);
 
             .service__icon {
-                background: url('../src/images/icons/#{$name}.svg') no-repeat center;
-                background-size: cover;
+                @include bg-img('../src/images/icons/#{$name}.svg');
             }
         }
     }

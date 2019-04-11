@@ -1,8 +1,7 @@
 .breadcrumbs {
     position: relative;
     min-height: 300px;
-    background: url('../src/images/carousel/slide_2.jpg') no-repeat center;
-    background-size: cover;
+    @include bg-img('../src/images/carousel/slide_2.jpg');
 
     @include media-breakpoint-down(md) {
         margin-top: 2.625rem;

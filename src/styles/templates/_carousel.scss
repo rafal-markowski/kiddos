@@ -12,15 +12,10 @@
         text-align: center;
         color: c('white');
 
-        &--1 {
-            background: url('../src/images/carousel/slide_1.jpg') no-repeat center;
-            background-size: cover;
-        }
-
-        &--2 {
-            background: url('../src/images/carousel/slide_2.jpg') no-repeat center;
-            background-size: cover;
-        }
+        @include bg-img((
+            1: '../src/images/carousel/slide_1.jpg',
+            2: '../src/images/carousel/slide_2.jpg'
+        ));
 
         &::after {
             @include position(absolute, 0, 0, 0, 0, -1);
@@ -48,33 +43,11 @@
     }
 
     &__btn-link {
-        position: relative;
-        padding: 1rem 2.25rem;
-        border-radius: 30px;
-        color: c('white');        
-        
-        &::before, &::after {
-            @include position(absolute, 0, 0, 0, 0, -1);
-            border-radius: inherit;
-            content: '';
-        }
-
-        &::before {
-            border: b(my-carousel);
-        }
-
-        &::after {
-            will-change: opacity;
-            transition: opacity 0.45s ease-in-out;
-            background: bg('pink');
-        }
-
-        &:hover {
-            color: c('white');
-
-            &::after {
-                opacity: 0;
-            }
-        }
+        @include button(
+            $bg: bg('pink'), 
+            $c: c('white'),
+            $h-c: inherit,
+            $b: b(my-carousel)
+        );
     }
 }

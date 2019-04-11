@@ -1,0 +1,13 @@
+@mixin bg-img($images) {
+    @each $key, $val in $images {
+        @if $key AND $val {
+            &--#{$key} {
+                background: url($val) no-repeat center;
+                background-size: cover; 
+            }
+        } @else {
+            background: url($key) no-repeat center;
+            background-size: cover; 
+        }
+    }
+}
